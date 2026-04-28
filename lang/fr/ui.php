@@ -206,6 +206,14 @@ return [
                         'posts_read' => 'Lire les posts',
                         'posts_update' => 'Modifier des posts',
                         'posts_delete' => 'Supprimer des posts',
+                        'posts_create' => 'Créer des posts',
+                        'posts_read'   => 'Lire les posts',
+                        'posts_update' => 'Modifier des posts',
+                        'posts_delete' => 'Supprimer des posts',
+                        'ratings_create' => 'Créer une note',
+                        'ratings_update' => 'Modifier une note',
+                        'ratings_delete' => 'Supprimer une note',
+
                     ],
                 ],
                 'content' => [

@@ -67,11 +67,53 @@
                             {{ __('ui.tokens.form.fields.scopes.options.posts_delete') }}
                         </label>
                     </div>
+                    <div class="flex items-center mb-2">
+                        <input
+                            type="checkbox"
+                            id="scope-ratings:create"
+                            name="scopes[]"
+                            value="ratings:create"
+                            {{ in_array('ratings:create', old('scopes', [])) ? 'checked' : '' }}
+                            class="mr-2 accent-accent"
+                        >
+                        <label for="scope-ratings:create" class="text-sm text-text">
+                            {{ __('ui.tokens.form.fields.scopes.options.ratings_create') }}
+                        </label>
+                    </div>
+
+                    <div class="flex items-center mb-2">
+                        <input
+                            type="checkbox"
+                            id="scope-ratings:update"
+                            name="scopes[]"
+                            value="ratings:update"
+                            {{ in_array('ratings:update', old('scopes', [])) ? 'checked' : '' }}
+                            class="mr-2 accent-accent"
+                        >
+                        <label for="scope-ratings:update" class="text-sm text-text">
+                            {{ __('ui.tokens.form.fields.scopes.options.ratings_update') }}
+                        </label>
+                    </div>
+
+                    <div class="flex items-center mb-2">
+                        <input
+                            type="checkbox"
+                            id="scope-ratings:delete"
+                            name="scopes[]"
+                            value="ratings:delete"
+                            {{ in_array('ratings:delete', old('scopes', [])) ? 'checked' : '' }}
+                            class="mr-2 accent-accent"
+                        >
+                        <label for="scope-ratings:delete" class="text-sm text-text">
+                            {{ __('ui.tokens.form.fields.scopes.options.ratings_delete') }}
+                        </label>
+                    </div>
                     @error('scopes')
                         <p class="mt-1 text-sm text-error">{{ $message }}</p>
                     @enderror
                 </fieldset>
             </div>
+
 
             <div class="mb-6">
                 <label for="expiration_date" class="block text-sm font-medium text-text mb-2">
