@@ -3,12 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Episode extends Model
 {
-    use HasFactory;
-
     protected $fillable = [
         'season_id',
         'number',
@@ -20,5 +17,10 @@ class Episode extends Model
     public function season()
     {
         return $this->belongsTo(Season::class);
+    }
+
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
     }
 }

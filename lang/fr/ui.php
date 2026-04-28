@@ -29,6 +29,15 @@ return [
             'meta' => 'Saison :season – Épisode :episode',
             'heading' => 'Noter cet épisode',
             'placeholder' => 'La fonctionnalité de vote sera ajoutée plus tard.',
+
+            'select_label' => 'Votre note (1 à 5)',
+            'submit' => 'Envoyer ma note',
+            'login_required' => 'Vous devez être connecté pour noter cet épisode.',
+            'login_link' => 'Se connecter',
+            'your_rating' => 'Votre note : :rating / 5',
+            'average_heading' => 'Note moyenne',
+            'average' => 'Moyenne : :average / 5',
+            'no_ratings_yet' => 'Aucune note pour le moment.',
         ],
     ],
     'home' => [

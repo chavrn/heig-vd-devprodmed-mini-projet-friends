@@ -10,6 +10,7 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SeasonController;
 use App\Http\Controllers\EpisodeController;
+use App\Http\Controllers\RatingController;
 
 
 Route::get('/', function () {
@@ -50,3 +51,8 @@ Route::get('/seasons/{season}/episodes', [EpisodeController::class, 'index'])
 
 Route::get('/episodes/{episode}', [EpisodeController::class, 'show'])
     ->name('episodes.show');
+
+//crée une note, auth obligatoire, et nom de route -> vue
+Route::post('/episodes/{episode}/ratings', [RatingController::class, 'store'])
+    ->middleware('auth')
+    ->name('ratings.store');
