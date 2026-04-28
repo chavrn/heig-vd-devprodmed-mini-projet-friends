@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'friends' => [
+        'voter' => 'Participez aux votes',
         'seasons' => [
             'index' => [
                 'title' => 'Saisons de Friends',

@@ -11,7 +11,6 @@
         @endif
 
         <div class="p-8">
-
             <header class="mb-6">
                 <div class="flex items-center gap-2.5 mb-4">
                     <span class="text-[11px] font-medium uppercase tracking-[0.06em] border border-border px-2 py-0.5 rounded bg-surface text-muted">
@@ -43,7 +42,6 @@
                     {{ __('ui.friends.vote.placeholder') }}
                 </p>
             </footer>
-
         </div>
 
     </article>

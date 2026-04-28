@@ -30,6 +30,10 @@
                         class="block bg-action px-3 py-1 rounded-md hover:bg-accent text-center">
                         {{ __('ui.posts.index.title') }}
                     </a>
+                    <a href="{{ url('/seasons') }}"
+                       class="block bg-action px-3 py-1 rounded-md hover:bg-accent text-center">
+                        {{ __('ui.friends.voter') }}
+                    </a>
                 </div>
 
                 @auth
