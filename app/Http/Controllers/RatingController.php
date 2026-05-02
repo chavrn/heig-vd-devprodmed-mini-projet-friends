@@ -18,7 +18,7 @@ class RatingController extends Controller
             'rating' => ['required', 'integer', 'between:1,5'],
         ]);
 
-        // Vérifier si l'user a déjà voté pour cet épisode
+        // Vérifier si l'user auth a déjà voté pour cet épisode
         $alreadyRated = Rating::where('user_id', auth()->id())
             ->where('episode_id', $episode->id)
             ->exists();

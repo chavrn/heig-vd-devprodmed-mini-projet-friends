@@ -53,7 +53,7 @@
                 <h2 class="text-xl font-bold dark:text-white mb-2">
                     {{ __('ui.friends.vote.heading') }}
                 </h2>
-                @auth
+                    @auth
                     @if ($userRating)
                         <p class="mt-4 text-green-600 dark:text-green-400 font-medium">
                             {{ __('ui.friends.vote.your_rating', ['rating' => $userRating->rating]) }}

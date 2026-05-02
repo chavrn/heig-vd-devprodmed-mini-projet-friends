@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //stockage des notes
         Schema::create('ratings', function (Blueprint $table) {
             $table->id();
 

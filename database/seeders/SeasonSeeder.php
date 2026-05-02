@@ -9,8 +9,7 @@ class SeasonSeeder extends Seeder
 {
     public function run(): void
     {
-        Season::create([
-            'number' => 1,
-        ]);
+        Season::firstOrCreate(['number' => 1]);
+        Season::firstOrCreate(['number' => 2]);
     }
 }
